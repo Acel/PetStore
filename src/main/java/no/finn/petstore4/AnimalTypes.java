@@ -11,28 +11,32 @@ import java.util.ArrayList;
  */
 public class AnimalTypes {
 
-    private static ArrayList<String> types = new ArrayList<String>();
+    private static ArrayList<AnimalType> types = new ArrayList<AnimalType>();
 
-    public static void addAnimalType(String type) {
+    public static void addAnimalType(AnimalType type) {
         if (!(types.contains(type))) {
             types.add(type);
         }
     }
 
-    public static boolean containsAnimal(String animal) {
+    /*public static boolean containsAnimal(String animal) {
         return types.contains(animal);
-    }
+    }*/
 
     public static void addSomeRandomAnimals() {
         if (types.isEmpty()) {
-            addAnimalType("dog");
-            addAnimalType("cat");
-            addAnimalType("parrot");
-            addAnimalType("hamster");
+            addAnimalType(new AnimalType("dog", "dog"));
+            addAnimalType(new AnimalType("cat", "cat"));
+            addAnimalType(new AnimalType("parrot", "parrot"));
+            /*addAnimalType("hamster");
             addAnimalType("bird");
             addAnimalType("rabbit");
             addAnimalType("snake");
-            addAnimalType("spider");
+            addAnimalType("spider");*/
         }
+    }
+
+    public static ArrayList<AnimalType> getTypes() {
+        return types;
     }
 }

@@ -13,17 +13,23 @@
     <title>Admin</title>
 </head>
 <body>
-
+    <%@include file="header.jsp" %>
     <form:form method = "post" action="admin">
         <table>
             <tbody>
                 <tr>
                     <td><form:label path="type">Type</form:label></td>
-                    <td><form:input path="type"></form:input></td>
+
+                    <td>
+                        <form:select path="type">
+                            <form:options items="${animalTypes}" itemLabel="name" itemValue="index"></form:options>
+                        </form:select>
+                    </td>
                 </tr>
                 <tr>
                     <td><form:label path="price">Price</form:label></td>
                     <td><form:input path="price"></form:input></td>
+                    <td><form:errors path="price"></form:errors> </td>
                 </tr>
                 <tr>
                     <td><form:label path="description">Description</form:label></td>

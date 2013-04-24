@@ -2,31 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/HelloController.java" afterPath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/HelloController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_0_0_GA.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_4_3_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_CR2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AdminController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/Animal.java" afterPath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/Animal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalTypes.java" afterPath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalTypes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalsList.java" afterPath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalsList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/ListController.java" afterPath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/ListController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PetStore4.iml" afterPath="$PROJECT_DIR$/PetStore4.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/PetStore4_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/PetStore4_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PetStore4.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/finntech/svn/login/PetStore2/.idea/workspace.xml" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366295502147" ignored="false" />
     <file path="$PROJECT_DIR$/../PetStore/.idea/workspace.xml" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366295503996" ignored="false" />
-    <file path="/Animal.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366639961368" ignored="false" />
-    <file path="/AnimalTypes.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366370978907" ignored="false" />
+    <file path="/Animal.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366719237419" ignored="false" />
+    <file path="/AnimalTypes.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366704434184" ignored="false" />
     <file path="/AnimalsList.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366629488414" ignored="false" />
-    <file path="/admin.jsp" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366642967643" ignored="false" />
-    <file path="/AdminController.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366642866660" ignored="false" />
+    <file path="/admin.jsp" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366719129776" ignored="false" />
+    <file path="/AdminController.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366720280538" ignored="false" />
     <file path="/ListController.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366369864720" ignored="false" />
     <file path="/list.jsp" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366640131562" ignored="false" />
     <file path="/web.xml" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366294935869" ignored="false" />
     <file path="/Dummy.txt" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366613223470" ignored="false" />
     <file path="/HelloController.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366369992137" ignored="false" />
-    <file path="/fragment.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366639175098" ignored="false" />
+    <file path="/fragment.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366719200320" ignored="false" />
     <file path="/a.dummy" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366643165685" ignored="false" />
+    <file path="/header.jsp" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366700535992" ignored="false" />
+    <file path="/AnimalType.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366703035171" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +101,7 @@
       <file leaf-file-name="admin.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="5" selection-start="352" selection-end="361" vertical-scroll-proportion="-10.0">
+            <state line="16" column="46" selection-start="428" selection-end="428" vertical-scroll-proportion="-7.8333335">
               <folding />
             </state>
           </provider>
@@ -99,7 +110,7 @@
       <file leaf-file-name="AdminController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="5" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0">
+            <state line="46" column="25" selection-start="1501" selection-end="1501" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,55 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="28" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/no/finn/petstore4/AppTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="997" selection-end="997" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Animal.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/Animal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="12" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.67153287">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/HelloController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="39" selection-start="471" selection-end="475" vertical-scroll-proportion="-12.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnimalTypes.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalTypes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="26" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
+            <state line="20" column="11" selection-start="987" selection-end="987" vertical-scroll-proportion="0.375">
               <folding />
             </state>
           </provider>
@@ -164,16 +130,63 @@
       <file leaf-file-name="AnimalsList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalsList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="8" selection-start="979" selection-end="979" vertical-scroll-proportion="0.0">
+            <state line="15" column="39" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/ListController.java">
+      <file leaf-file-name="Animal.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/Animal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+            <state line="3" column="40" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="47" selection-start="47" selection-end="47" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="61" selection-start="594" selection-end="594" vertical-scroll-proportion="-13.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnimalTypes.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalTypes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="7" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnimalType.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="50" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="21" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -200,17 +213,20 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/ListController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalTypes.java" />
         <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/HelloController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalsList.java" />
         <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/SessionAttributes.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalsList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalTypes.java" />
         <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/Animal.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
       </list>
     </option>
   </component>
@@ -230,9 +246,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-480" />
-    <option name="y" value="-1080" />
+    <option name="y" value="-1200" />
     <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -639,7 +655,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-480" y="-1080" width="1920" height="1080" extended-state="6" />
+    <frame x="-480" y="-1200" width="1920" height="1200" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -648,7 +664,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37083334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3638889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -662,8 +678,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18303095" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23333333" sideWeight="0.98132336" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18303095" sideWeight="0.76666665" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23333333" sideWeight="0.98132336" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -735,58 +751,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="23" selection-start="34" selection-end="34" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="603" selection-end="603" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.0.RELEASE/spring-web-3.2.0.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="34" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.34707904" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="23" selection-start="2066" selection-end="2066" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_15.jdk/Contents/Home/src.zip!/java/lang/Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="11" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_15.jdk/Contents/Home/src.zip!/java/lang/IllegalArgumentException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="6" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalsList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="8" selection-start="979" selection-end="979" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -798,30 +765,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="26" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="39" selection-start="471" selection-end="475" vertical-scroll-proportion="-12.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/ListController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -833,25 +779,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="352" selection-end="361" vertical-scroll-proportion="-10.0">
+        <state line="0" column="47" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AdminController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="5" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0">
+        <state line="21" column="11" selection-start="785" selection-end="785" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/ModelAndView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="225" column="24" selection-start="6892" selection-end="6892" vertical-scroll-proportion="0.33211678">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="50" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="39" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="7" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="40" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/Animal.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="12" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.67153287">
+        <state line="16" column="46" selection-start="428" selection-end="428" vertical-scroll-proportion="-7.8333335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="61" selection-start="594" selection-end="594" vertical-scroll-proportion="-13.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="21" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="25" selection-start="1501" selection-end="1501" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="11" selection-start="987" selection-end="987" vertical-scroll-proportion="0.375">
           <folding />
         </state>
       </provider>

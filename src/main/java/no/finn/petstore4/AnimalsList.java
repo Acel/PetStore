@@ -13,7 +13,7 @@ public class AnimalsList {
 
     private static ArrayList<Animal> list = new ArrayList<Animal>();
 
-    public static ArrayList<Animal> getAnimalsList() {
+    public static ArrayList<Animal> getList() {
         return list;
     }
 

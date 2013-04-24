@@ -1,5 +1,8 @@
 package no.finn.petstore4;
 
+import javax.swing.text.html.MinimalHTMLWriter;
+import javax.validation.constraints.Min;
+
 /**
  * Created with IntelliJ IDEA.
  * User: javalons
@@ -10,6 +13,8 @@ package no.finn.petstore4;
 public class Animal {
 
     private String type;
+    @Min(0)
+    //@Range(min = 0, max = 150)
     private double price;
     private String description;
 
@@ -20,13 +25,9 @@ public class Animal {
     }
 
     public Animal(String type, double price, String description) throws IllegalArgumentException {
-        if (AnimalTypes.containsAnimal(type)) {
-            this.type = type;
-            this.price = price;
-            this.description = description;
-        } else {
-            throw new IllegalArgumentException("Wrong animal type");
-        }
+        this.type = type;
+        this.price = price;
+        this.description = description;
     }
 
     public String getType() {
@@ -42,11 +43,7 @@ public class Animal {
     }
 
     public void setType(String type) {
-        if (AnimalTypes.containsAnimal(type)) {
-            this.type = type;
-        } else {
-            throw new IllegalArgumentException("Wrong animal type");
-        }
+        this.type = type;
     }
 
     public void setPrice(double price) {

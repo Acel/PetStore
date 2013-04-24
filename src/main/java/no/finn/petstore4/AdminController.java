@@ -2,8 +2,11 @@ package no.finn.petstore4;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.validation.Valid;
 
 /**
  * Created with IntelliJ IDEA.
@@ -31,13 +34,19 @@ public class AdminController {
 
     @RequestMapping("/admin")
     public ModelAndView admin() {
-        return new ModelAndView("admin", "command", new Animal());
+        ModelMap map = new ModelMap("command", new Animal());
+        map.addAttribute("animalTypes",AnimalTypes.getTypes());
+        return new ModelAndView("admin", map);
     }
 
     @RequestMapping(value = "/admin", method = RequestMethod.POST)
-    public ModelAndView processForm(@ModelAttribute("admin") Animal animal) {
+    public String processForm(@ModelAttribute("admin") @Valid Animal animal, BindingResult result) {
         AnimalsList.addAnimal(animal);
-        return new ModelAndView("admin", "command", new Animal());
-        //return "admin";
+
+        if (result.hasErrors()) {
+            return "admin";
+        }
+        //return new ModelAndView("admin", "command", new Animal());
+        return "redirect:admin";
     }
 }

@@ -18,7 +18,7 @@ public class ListController {
     @RequestMapping(value = "/list")
     public String admin(ModelMap model) {
 
-        model.addAttribute("list", AnimalsList.getAnimalsList());
+        model.addAttribute("list", AnimalsList.getList());
 
         //model.addAttribute("message", "Hello world!");
         return "list";

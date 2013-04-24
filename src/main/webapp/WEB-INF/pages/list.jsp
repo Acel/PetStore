@@ -13,13 +13,14 @@
     <title>List</title>
 </head>
 <body>
+    <%@include file="header.jsp" %>
     <c:set var="hello" value="This is list page!"/>
     <p/>
     <c:out value="${hello}"/>
     <p/>
 
     <c:forEach var="item" items="${list}" varStatus="index">
-        <div>${index.index}: ${item.type} - ${item.price} - ${item.description}</div>
+        <div>${index.index}: ${item.type} ** ${item.price} ** ${item.description}</div>
     </c:forEach>
 </body>
 </html>
