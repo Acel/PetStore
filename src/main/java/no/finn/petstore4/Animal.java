@@ -1,5 +1,7 @@
 package no.finn.petstore4;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.swing.text.html.MinimalHTMLWriter;
 import javax.validation.constraints.Min;
 
@@ -16,6 +18,7 @@ public class Animal {
     @Min(0)
     //@Range(min = 0, max = 150)
     private double price;
+    @NotEmpty
     private String description;
 
     public Animal() {

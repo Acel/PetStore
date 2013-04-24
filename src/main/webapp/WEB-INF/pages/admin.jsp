@@ -14,7 +14,7 @@
 </head>
 <body>
     <%@include file="header.jsp" %>
-    <form:form method = "post" action="admin">
+    <form:form method = "post" action="admin" commandName="animal">
         <table>
             <tbody>
                 <tr>
@@ -29,11 +29,12 @@
                 <tr>
                     <td><form:label path="price">Price</form:label></td>
                     <td><form:input path="price"></form:input></td>
-                    <td><form:errors path="price"></form:errors> </td>
+                    <td><form:errors path="price"></form:errors></td>
                 </tr>
                 <tr>
                     <td><form:label path="description">Description</form:label></td>
                     <td><form:input path="description"></form:input></td>
+                    <td><form:errors path="description"></form:errors></td>
                 </tr>
                 <tr>
                     <td colspan="2"><input type="submit" value="Submit"></td>

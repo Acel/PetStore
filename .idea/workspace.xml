@@ -2,33 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_0_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_4_3_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_CR2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AdminController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/Animal.java" afterPath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/Animal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalTypes.java" afterPath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalTypes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalsList.java" afterPath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalsList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/ListController.java" afterPath="$PROJECT_DIR$/src/main/java/no/finn/petstore4/ListController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PetStore4.iml" afterPath="$PROJECT_DIR$/PetStore4.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/PetStore4_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/PetStore4_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/list.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PetStore4.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/finntech/svn/login/PetStore2/.idea/workspace.xml" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366295502147" ignored="false" />
     <file path="$PROJECT_DIR$/../PetStore/.idea/workspace.xml" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366295503996" ignored="false" />
-    <file path="/Animal.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366719237419" ignored="false" />
+    <file path="/Animal.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366805969504" ignored="false" />
     <file path="/AnimalTypes.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366704434184" ignored="false" />
     <file path="/AnimalsList.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366629488414" ignored="false" />
-    <file path="/admin.jsp" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366719129776" ignored="false" />
-    <file path="/AdminController.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366720280538" ignored="false" />
+    <file path="/admin.jsp" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366806033224" ignored="false" />
+    <file path="/AdminController.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366805869669" ignored="false" />
     <file path="/ListController.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366369864720" ignored="false" />
     <file path="/list.jsp" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366640131562" ignored="false" />
     <file path="/web.xml" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366294935869" ignored="false" />
@@ -38,6 +26,21 @@
     <file path="/a.dummy" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366643165685" ignored="false" />
     <file path="/header.jsp" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366700535992" ignored="false" />
     <file path="/AnimalType.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366703035171" ignored="false" />
+    <file path="/mvc-dispatcher-servlet.xml" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366792214281" ignored="false" />
+    <file path="$USER_HOME$/Downloads/Spring3MVC/.idea/workspace.xml" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366804516014" ignored="false" />
+    <file path="$USER_HOME$/Downloads/Spring3MVC/.idea/modules.xml" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366801411560" ignored="false" />
+    <file path="$USER_HOME$/Downloads/Spring3MVC/.idea/misc.xml" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366801411560" ignored="false" />
+    <file path="$USER_HOME$/Downloads/Spring3MVC/.idea/compiler.xml" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366801411560" ignored="false" />
+    <file path="$USER_HOME$/Downloads/Spring3MVC/src/main/webapp/WEB-INF/pages/SignUpForm.jsp" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366803709299" ignored="false" />
+    <file path="$USER_HOME$/Downloads/Spring3MVC/src/main/java/com/mkyong/common/controller/SignUpController.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366803974024" ignored="false" />
+    <file path="/a.txt" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366802873208" ignored="false" />
+    <file path="$USER_HOME$/Downloads/Spring3MVC/src/main/resources/messages.properties" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366802997900" ignored="false" />
+    <file path="$USER_HOME$/Downloads/Spring3MVC/src/main/java/com/mkyong/common/model/Customer.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366803121953" ignored="false" />
+    <file path="/SignUpForm.jsp" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366803709299" ignored="false" />
+    <file path="/SignUpController.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366803973129" ignored="false" />
+    <file path="$USER_HOME$/Downloads/Spring3MVC/src/main/java/com/mkyong/common/model/Customer2.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366803949696" ignored="false" />
+    <file path="/Customer2.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366803949696" ignored="false" />
+    <file path="$USER_HOME$/Downloads/Spring3MVC/src/main/java/com/mkyong/common/model/Customer2pepe.java" changelist="90c9cd72-2846-4c92-9e91-b5e8fc946cc0" time="1366804348272" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,16 +104,16 @@
       <file leaf-file-name="admin.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="46" selection-start="428" selection-end="428" vertical-scroll-proportion="-7.8333335">
+            <state line="36" column="54" selection-start="1345" selection-end="1345" vertical-scroll-proportion="-22.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AdminController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="25" selection-start="1501" selection-end="1501" vertical-scroll-proportion="0.0">
+            <state line="36" column="38" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.675">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="11" selection-start="987" selection-end="987" vertical-scroll-proportion="0.375">
+            <state line="22" column="0" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -139,19 +142,10 @@
       <file leaf-file-name="Animal.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/Animal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="40" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
+            <state line="38" column="0" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="47" selection-start="47" selection-end="47" vertical-scroll-proportion="-0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -169,24 +163,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalTypes.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="7" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnimalType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="50" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="21" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -221,12 +197,12 @@
         <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalsList.java" />
         <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalType.java" />
         <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalTypes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/Animal.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/Animal.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/no/finn/petstore4/AdminController.java" />
       </list>
     </option>
   </component>
@@ -418,6 +394,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Spring3MVC-1/pom.xml" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -664,7 +641,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37083334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3638889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.225" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -679,7 +656,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18303095" sideWeight="0.76666665" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23333333" sideWeight="0.98132336" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23333333" sideWeight="0.98132336" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -751,20 +728,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_15.jdk/Contents/Home/src.zip!/java/lang/IllegalArgumentException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="6" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/ListController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
@@ -807,6 +770,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.0.RELEASE/spring-webmvc-3.2.0.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="0" selection-start="4520" selection-end="4520" vertical-scroll-proportion="0.3323217">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.2.0.RELEASE/spring-web-3.2.0.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="34" selection-start="1453" selection-end="1453" vertical-scroll-proportion="0.531401">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalsList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="39" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
@@ -814,16 +798,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalTypes.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="7" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+        <state line="75" column="21" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.7283763">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="40" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
+        <state line="38" column="0" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -832,7 +816,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="46" selection-start="428" selection-end="428" vertical-scroll-proportion="-7.8333335">
+        <state line="36" column="54" selection-start="1345" selection-end="1345" vertical-scroll-proportion="-22.5">
           <folding />
         </state>
       </provider>
@@ -844,26 +828,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AnimalTypes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="21" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.0">
+        <state line="23" column="7" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/no/finn/petstore4/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="25" selection-start="1501" selection-end="1501" vertical-scroll-proportion="0.0">
+        <state line="36" column="38" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.675">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="11" selection-start="987" selection-end="987" vertical-scroll-proportion="0.375">
-          <folding />
         </state>
       </provider>
     </entry>

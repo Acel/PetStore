@@ -17,36 +17,24 @@ import javax.validation.Valid;
  */
 
 @Controller
-@SessionAttributes
-//@RequestMapping(value = "/admin", method = RequestMethod.GET)
+@RequestMapping(value = "/admin")
 public class AdminController {
-    /*@RequestMapping(value = "/admin")
-    public String admin(ModelMap model) {
-        model.addAttribute("message", "Hello world!");
-        return "admin";
-    }
-
-    @RequestMapping(value = "admin", method = RequestMethod.POST)
-    public String processForm(@RequestParam(value="type") String type) {
-        AnimalsList.addAnimal(new Animal(type, 12, "ddde"));
-        return "admin";
-    }*/
-
-    @RequestMapping("/admin")
-    public ModelAndView admin() {
-        ModelMap map = new ModelMap("command", new Animal());
+    @RequestMapping(method = RequestMethod.GET)
+    public String admin(ModelMap map) {
+        map.addAttribute("animal", new Animal());
         map.addAttribute("animalTypes",AnimalTypes.getTypes());
-        return new ModelAndView("admin", map);
+        return "admin";
     }
 
-    @RequestMapping(value = "/admin", method = RequestMethod.POST)
-    public String processForm(@ModelAttribute("admin") @Valid Animal animal, BindingResult result) {
-        AnimalsList.addAnimal(animal);
+    @RequestMapping(method = RequestMethod.POST)
+    public String processForm(@Valid Animal animal, BindingResult result, ModelMap map) {
 
         if (result.hasErrors()) {
+            map.addAttribute("animalTypes",AnimalTypes.getTypes());
             return "admin";
         }
-        //return new ModelAndView("admin", "command", new Animal());
+
+        AnimalsList.addAnimal(animal);
         return "redirect:admin";
     }
 }
