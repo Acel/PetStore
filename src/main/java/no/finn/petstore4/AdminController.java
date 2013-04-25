@@ -34,7 +34,8 @@ public class AdminController {
             return "admin";
         }
 
-        AnimalsList.addAnimal(animal);
+        //AnimalsList.addAnimal(animal);
+        Connector.insertAnimal(animal);
         return "redirect:admin";
     }
 }

@@ -14,6 +14,9 @@ public class HelloController {
         AnimalTypes.addSomeRandomAnimals();
         AnimalsList.addSomeRandomAnimals();
 
+        //Connector.createTables();
+        //Connector.insertAnimalsList();
+
         model.addAttribute("message", "Hello world!");
 		return "hello";
 	}

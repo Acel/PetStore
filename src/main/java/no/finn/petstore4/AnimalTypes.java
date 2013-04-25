@@ -28,11 +28,11 @@ public class AnimalTypes {
             addAnimalType(new AnimalType("dog", "dog"));
             addAnimalType(new AnimalType("cat", "cat"));
             addAnimalType(new AnimalType("parrot", "parrot"));
-            /*addAnimalType("hamster");
-            addAnimalType("bird");
-            addAnimalType("rabbit");
-            addAnimalType("snake");
-            addAnimalType("spider");*/
+            addAnimalType(new AnimalType("hamster", "hamster"));
+            addAnimalType(new AnimalType("bird", "bird"));
+            addAnimalType(new AnimalType("rabbit", "rabbit"));
+            addAnimalType(new AnimalType("snake", "snake"));
+            addAnimalType(new AnimalType("spider", "spider"));
         }
     }
 
