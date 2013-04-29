@@ -1,5 +1,7 @@
 package no.finn.petstore4;
 
+import no.finn.data.Connector2;
+import no.finn.data.JDBConnector;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +23,8 @@ public class ListController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String admin(ModelMap model) {
-        ArrayList list = Connector.getAnimalsList();
+        Connector2 connector2 = new JDBConnector();
+        ArrayList list = connector2.getAnimalsList();
 
         //model.addAttribute("list", AnimalsList.getList());
         model.addAttribute("list", list);
