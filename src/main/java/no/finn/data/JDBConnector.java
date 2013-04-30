@@ -2,6 +2,7 @@ package no.finn.data;
 
 import no.finn.petstore4.Animal;
 import no.finn.petstore4.AnimalsList;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -13,6 +14,7 @@ import java.util.ArrayList;
  * Time: 15:51
  * To change this template use File | Settings | File Templates.
  */
+@Component
 public class JDBConnector implements Connector2 {
 
     private Connection dbcon;

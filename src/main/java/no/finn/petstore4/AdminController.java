@@ -2,6 +2,7 @@ package no.finn.petstore4;
 
 import no.finn.data.Connector2;
 import no.finn.data.JDBConnector;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -21,6 +22,9 @@ import javax.validation.Valid;
 @Controller
 @RequestMapping(value = "/admin")
 public class AdminController {
+    @Autowired
+    private Connector2 connector2;
+
     @RequestMapping(method = RequestMethod.GET)
     public String admin(ModelMap map) {
         map.addAttribute("animal", new Animal());
@@ -38,7 +42,7 @@ public class AdminController {
 
         //AnimalsList.addAnimal(animal);
         //Connector.insertAnimal(animal);
-        Connector2 connector2 = new JDBConnector();
+
         connector2.insertAnimal(animal);
         return "redirect:admin";
     }
