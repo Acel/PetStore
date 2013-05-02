@@ -21,4 +21,14 @@
         <property name="basename" value="messages" />
     </bean>
 
+    <bean id="dataSource" destroy-method="close"
+          class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost/PetStore"/>
+        <property name="username" value="root"/>
+        <property name="password" value=""/>
+        <property name="initialSize" value="3"/>
+        <property name="maxActive" value="10"/>
+    </bean>
+
 </beans>

@@ -1,7 +1,6 @@
 package no.finn.data;
 
 import no.finn.petstore4.Animal;
-import no.finn.petstore4.AnimalsList;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -10,22 +9,22 @@ import java.util.ArrayList;
 /**
  * Created with IntelliJ IDEA.
  * User: javalons
- * Date: 29/04/13
- * Time: 15:51
+ * Date: 02/05/13
+ * Time: 13:35
  * To change this template use File | Settings | File Templates.
  */
-
-public class JDBConnector implements Connector2 {
+@Component
+public class MySQLConnector implements Connector2 {
 
     private Connection dbcon;
 
     private Connection connect() {
         if (dbcon == null) {
             try {
-                Class.forName("org.hsqldb.jdbcDriver");
-                dbcon = DriverManager.getConnection("jdbc:hsqldb:file:data/PetStore", "sa", "");
+                Class.forName("com.mysql.jdbc.Driver");
+                dbcon = DriverManager.getConnection("jdbc:mysql://localhost/PetStore", "root", "");
             } catch (Exception e) {
-                System.out.println("ERROR: Connecting with HSQLDB JDBC driver.");
+                System.out.println("ERROR: Connecting with mysql JDBC driver.");
                 e.printStackTrace();
             }
         }
@@ -39,12 +38,13 @@ public class JDBConnector implements Connector2 {
                 dbcon.close();
                 dbcon = null;
             } catch (Exception e) {
-                System.out.println("ERROR: Closing HSQLDB.");
+                System.out.println("ERROR: Closing mysql.");
                 e.printStackTrace();
             }
         }
     }
 
+    @Override
     public void init() {
         String query;
 
@@ -84,7 +84,7 @@ public class JDBConnector implements Connector2 {
             stmt.close();
             disconnect();
         }catch(Exception e){
-            System.out.println("ERROR: Creating tables.");
+            System.out.println("ERROR: Inserting animal.");
             e.printStackTrace();
         }
     }
@@ -115,4 +115,5 @@ public class JDBConnector implements Connector2 {
 
         return list;
     }
+
 }
