@@ -91,7 +91,7 @@ public class Connector {
             query = "SELECT * FROM AnimalsList";
             ResultSet result = stmt.executeQuery(query);
             while (result.next()) {
-                animal = new Animal(result.getString("type"), result.getDouble("price"), result.getString("description"));
+                animal = new Animal(result.getInt("id"), result.getString("type"), result.getDouble("price"), result.getString("description"), result.getBoolean("ordered"));
                 list.add(animal);
             }
 

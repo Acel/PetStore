@@ -72,6 +72,34 @@ public class JDBConnector implements Connector2 {
     }
 
     @Override
+    public void orderAnimal(int id) {
+        String query;
+
+        try {
+            Statement stmt = connect().createStatement();
+
+            query = "UPDATE AnimalsList SET ordered = true WHERE id = " + id;
+            stmt.execute(query);
+
+            stmt.close();
+            disconnect();
+        }catch(Exception e){
+            System.out.println("ERROR: Ordering animals.");
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public ArrayList<Animal> getOrdersList() {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
+    public void cancelOrder(int id) {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    @Override
     public void insertAnimal(Animal animal) {
         String query;
 
@@ -98,10 +126,10 @@ public class JDBConnector implements Connector2 {
         try {
             Statement stmt = connect().createStatement();
 
-            query = "SELECT * FROM AnimalsList";
+            query = "SELECT * FROM AnimalsList WHERE ordered = false";
             ResultSet result = stmt.executeQuery(query);
             while (result.next()) {
-                animal = new Animal(result.getString("type"), result.getDouble("price"), result.getString("description"));
+                animal = new Animal(result.getInt("id"), result.getString("type"), result.getDouble("price"), result.getString("description"), result.getBoolean("ordered"));
                 list.add(animal);
             }
 

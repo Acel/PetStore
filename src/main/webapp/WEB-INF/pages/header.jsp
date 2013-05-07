@@ -1,1 +1,1 @@
-<span><a href = "/admin">Admin</a></span> ---- <span><a href = "/list">List</a></span>
+<span><a href = "/admin">Admin</a></span> ---- <span><a href = "/list">List</a></span> ---- <span><a href = "/myorders">My Orders</a></span>

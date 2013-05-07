@@ -14,12 +14,14 @@ import javax.validation.constraints.Min;
  */
 public class Animal {
 
+    private int id;
     private String type;
     @Min(0)
     //@Range(min = 0, max = 150)
     private double price;
     @NotEmpty
     private String description;
+    private Boolean ordered;
 
     public Animal() {
         type = "";
@@ -27,10 +29,12 @@ public class Animal {
         description = "";
     }
 
-    public Animal(String type, double price, String description) throws IllegalArgumentException {
+    public Animal(int id, String type, double price, String description, Boolean ordered) throws IllegalArgumentException {
+        this.id = id;
         this.type = type;
         this.price = price;
         this.description = description;
+        this.ordered = ordered;
     }
 
     public String getType() {
@@ -55,5 +59,21 @@ public class Animal {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Boolean getOrdered() {
+        return ordered;
+    }
+
+    public void setOrdered(Boolean ordered) {
+        this.ordered = ordered;
     }
 }

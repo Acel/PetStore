@@ -18,4 +18,10 @@ public interface Connector2 {
     public ArrayList<Animal> getAnimalsList();
 
     public void init();
+
+    void orderAnimal(int id);
+
+    ArrayList<Animal> getOrdersList();
+
+    void cancelOrder(int id);
 }

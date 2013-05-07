@@ -20,11 +20,11 @@ public class AnimalsList {
     public static void addSomeRandomAnimals() {
         if (list.isEmpty()) {
             try {
-                list.add(new Animal("dog", 400, "Bulldog"));
-                list.add(new Animal("dog", 600, "Yorkshire Terrier"));
-                list.add(new Animal("cat", 300, "Persa"));
-                list.add(new Animal("hamster", 50, "Ugly"));
-                list.add(new Animal("bird", 100, "Yellow"));
+                list.add(new Animal(0, "dog", 400, "Bulldog", false));
+                list.add(new Animal(0, "dog", 600, "Yorkshire Terrier", false));
+                list.add(new Animal(0, "cat", 300, "Persa", false));
+                list.add(new Animal(0, "hamster", 50, "Ugly", false));
+                list.add(new Animal(0, "bird", 100, "Yellow", false));
 
             } catch(IllegalArgumentException e) {
                 //Do something here

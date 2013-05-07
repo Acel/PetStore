@@ -1,6 +1,7 @@
 package no.finn.data;
 
 import no.finn.petstore4.Animal;
+import no.finn.petstore4.AnimalsList;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -52,7 +53,7 @@ public class MySQLConnector implements Connector2 {
             Statement stmt = connect().createStatement();
 
             try {
-                query = "CREATE TABLE AnimalsList (type varchar(255), price double, description varchar(255))";
+                query = "CREATE TABLE IF NOT EXISTS AnimalsList (id int not null auto_increment, type varchar(255), price double, description varchar(255), ordered boolean default false, primary key (id))";
                 stmt.execute(query);
             } catch(SQLException e) {}
 
@@ -67,6 +68,38 @@ public class MySQLConnector implements Connector2 {
             disconnect();
         }catch(Exception e){
             System.out.println("ERROR: Creating tables.");
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void orderAnimal(int id) {
+        this.changeAnimalState(id, true);
+    }
+
+    @Override
+    public ArrayList<Animal> getOrdersList() {
+        return getAnimals(true);
+    }
+
+    @Override
+    public void cancelOrder(int id) {
+        this.changeAnimalState(id, false);
+    }
+
+    private void changeAnimalState(int id, Boolean ordered) {
+        String query;
+
+        try {
+            Statement stmt = connect().createStatement();
+
+            query = "UPDATE AnimalsList SET ordered = " + ordered + " WHERE id = " + id;
+            stmt.execute(query);
+
+            stmt.close();
+            disconnect();
+        }catch(Exception e){
+            System.out.println("ERROR: Ordering animals.");
             e.printStackTrace();
         }
     }
@@ -91,6 +124,10 @@ public class MySQLConnector implements Connector2 {
 
     @Override
     public ArrayList<Animal> getAnimalsList() {
+        return getAnimals(false);
+    }
+
+    private ArrayList<Animal> getAnimals(Boolean ordered) {
         String query;
         Animal animal;
         ArrayList<Animal> list = new ArrayList<Animal>();
@@ -98,10 +135,10 @@ public class MySQLConnector implements Connector2 {
         try {
             Statement stmt = connect().createStatement();
 
-            query = "SELECT * FROM AnimalsList";
+            query = "SELECT * FROM AnimalsList WHERE ordered = " + ordered;
             ResultSet result = stmt.executeQuery(query);
             while (result.next()) {
-                animal = new Animal(result.getString("type"), result.getDouble("price"), result.getString("description"));
+                animal = new Animal(result.getInt("id"), result.getString("type"), result.getDouble("price"), result.getString("description"), result.getBoolean("ordered"));
                 list.add(animal);
             }
 
@@ -109,11 +146,10 @@ public class MySQLConnector implements Connector2 {
             stmt.close();
             disconnect();
         }catch(Exception e){
-            System.out.println("ERROR: Creating tables.");
+            System.out.println("ERROR: Getting animals.");
             e.printStackTrace();
         }
 
         return list;
     }
-
 }
