@@ -19,10 +19,6 @@ public class AnimalTypes {
         }
     }
 
-    /*public static boolean containsAnimal(String animal) {
-        return types.contains(animal);
-    }*/
-
     public static void addSomeRandomAnimals() {
         if (types.isEmpty()) {
             addAnimalType(new AnimalType("dog", "dog"));

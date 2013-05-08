@@ -30,14 +30,11 @@ public class ListController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String admin(ModelMap model) {
-        //Connector2 connector2 = new JDBConnector();
 
         ArrayList list = connector2.getAnimalsList();
 
-        //model.addAttribute("list", AnimalsList.getList());
         model.addAttribute("list", list);
 
-        //model.addAttribute("message", "Hello world!");
         return "list";
 
     }
@@ -47,13 +44,5 @@ public class ListController {
 
         connector2.orderAnimal(buttonvalue);
 
-        //System.out.println(buttonvalue);
-
-        //connector2.orderAnimal();
-
-        //ArrayList list = connector2.getAnimalsList();
-        //model.addAttribute("list", list);
-
-        //return "list";
     }
 }
