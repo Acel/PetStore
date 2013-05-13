@@ -25,7 +25,7 @@ public class MySQLConnector implements Connector2 {
                 Class.forName("com.mysql.jdbc.Driver");
                 dbcon = DriverManager.getConnection("jdbc:mysql://localhost/PetStore", "root", "");
             } catch (Exception e) {
-                System.out.println("ERROR: Connecting with mysql JDBC driver.");
+                System.err.println("ERROR: Connecting with mysql JDBC driver.");
                 e.printStackTrace();
             }
         }
@@ -39,7 +39,18 @@ public class MySQLConnector implements Connector2 {
                 dbcon.close();
                 dbcon = null;
             } catch (Exception e) {
-                System.out.println("ERROR: Closing mysql.");
+                System.err.println("ERROR: Closing mysql.");
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void closeStatement(Statement stmt) {
+        if(stmt != null) {
+            try {
+                stmt.close();
+            } catch (SQLException e) {
+                System.err.println("ERROR: Could not close statement.");
                 e.printStackTrace();
             }
         }
@@ -48,9 +59,10 @@ public class MySQLConnector implements Connector2 {
     @Override
     public void init() {
         String query;
+        Statement stmt = null;
 
         try {
-            Statement stmt = connect().createStatement();
+            stmt = connect().createStatement();
 
             try {
                 query = "CREATE TABLE IF NOT EXISTS AnimalsList (id int not null auto_increment, type varchar(255), price double, description varchar(255), ordered boolean default false, primary key (id))";
@@ -64,11 +76,12 @@ public class MySQLConnector implements Connector2 {
                 }
             } catch(SQLException e) {}*/
 
-            stmt.close();
-            disconnect();
-        }catch(Exception e){
-            System.out.println("ERROR: Creating tables.");
+        } catch(Exception e){
+            System.err.println("ERROR: Creating tables.");
             e.printStackTrace();
+        } finally {
+            closeStatement(stmt);
+            disconnect();
         }
     }
 
@@ -89,36 +102,40 @@ public class MySQLConnector implements Connector2 {
 
     private void changeAnimalState(int id, Boolean ordered) {
         String query;
+        Statement stmt = null;
 
         try {
-            Statement stmt = connect().createStatement();
+            stmt = connect().createStatement();
 
             query = "UPDATE AnimalsList SET ordered = " + ordered + " WHERE id = " + id;
             stmt.execute(query);
 
-            stmt.close();
-            disconnect();
-        }catch(Exception e){
-            System.out.println("ERROR: Ordering animals.");
+        } catch(Exception e){
+            System.err.println("ERROR: Ordering animals.");
             e.printStackTrace();
+        } finally {
+            closeStatement(stmt);
+            disconnect();
         }
     }
 
     @Override
     public void insertAnimal(Animal animal) {
         String query;
+        Statement stmt = null;
 
         try {
-            Statement stmt = connect().createStatement();
+            stmt = connect().createStatement();
 
             query = "INSERT INTO AnimalsList (type, price, description) VALUES ('" + animal.getType() + "', '" + animal.getPrice() + "', '" + animal.getDescription() + "')";
             stmt.execute(query);
 
-            stmt.close();
-            disconnect();
-        }catch(Exception e){
-            System.out.println("ERROR: Inserting animal.");
+        } catch(Exception e){
+            System.err.println("ERROR: Inserting animal.");
             e.printStackTrace();
+        } finally {
+            closeStatement(stmt);
+            disconnect();
         }
     }
 
@@ -131,9 +148,10 @@ public class MySQLConnector implements Connector2 {
         String query;
         Animal animal;
         ArrayList<Animal> list = new ArrayList<Animal>();
+        Statement stmt = null;
 
         try {
-            Statement stmt = connect().createStatement();
+            stmt = connect().createStatement();
 
             query = "SELECT * FROM AnimalsList WHERE ordered = " + ordered;
             ResultSet result = stmt.executeQuery(query);
@@ -143,11 +161,12 @@ public class MySQLConnector implements Connector2 {
             }
 
             result.close();
-            stmt.close();
-            disconnect();
-        }catch(Exception e){
-            System.out.println("ERROR: Getting animals.");
+        } catch(Exception e){
+            System.err.println("ERROR: Getting animals.");
             e.printStackTrace();
+        } finally {
+            closeStatement(stmt);
+            disconnect();
         }
 
         return list;
