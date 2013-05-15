@@ -2,6 +2,7 @@ package no.finn.data;
 
 import no.finn.petstore4.Animal;
 import no.finn.petstore4.AnimalsList;
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -18,6 +19,7 @@ import java.util.ArrayList;
 public class MySQLConnector implements Connector2 {
 
     private Connection dbcon;
+    private static final Logger log = Logger.getLogger(MySQLConnector.class);
 
     private Connection connect() {
         if (dbcon == null) {
@@ -25,8 +27,9 @@ public class MySQLConnector implements Connector2 {
                 Class.forName("com.mysql.jdbc.Driver");
                 dbcon = DriverManager.getConnection("jdbc:mysql://localhost/PetStore", "root", "");
             } catch (Exception e) {
-                System.err.println("ERROR: Connecting with mysql JDBC driver.");
-                e.printStackTrace();
+                log.error("ERROR: Connecting with mysql JDBC driver.", e);
+                //System.err.println("ERROR: Connecting with mysql JDBC driver.");
+                //e.printStackTrace();
             }
         }
 
@@ -39,8 +42,9 @@ public class MySQLConnector implements Connector2 {
                 dbcon.close();
                 dbcon = null;
             } catch (Exception e) {
-                System.err.println("ERROR: Closing mysql.");
-                e.printStackTrace();
+                log.error("ERROR: Disconnecting mysql");
+                //System.err.println("ERROR: Closing mysql.");
+                //e.printStackTrace();
             }
         }
     }
@@ -50,8 +54,9 @@ public class MySQLConnector implements Connector2 {
             try {
                 stmt.close();
             } catch (SQLException e) {
-                System.err.println("ERROR: Could not close statement.");
-                e.printStackTrace();
+                log.error("ERROR: Could not close statement.");
+                //System.err.println("ERROR: Could not close statement.");
+                //e.printStackTrace();
             }
         }
     }
@@ -77,8 +82,9 @@ public class MySQLConnector implements Connector2 {
             } catch(SQLException e) {}*/
 
         } catch(Exception e){
-            System.err.println("ERROR: Creating tables.");
-            e.printStackTrace();
+            log.error("ERROR: Creating tables.");
+            //System.err.println("ERROR: Creating tables.");
+            //e.printStackTrace();
         } finally {
             closeStatement(stmt);
             disconnect();
@@ -111,8 +117,9 @@ public class MySQLConnector implements Connector2 {
             stmt.execute(query);
 
         } catch(Exception e){
-            System.err.println("ERROR: Ordering animals.");
-            e.printStackTrace();
+            log.error("ERROR: Ordering animals.");
+            //System.err.println("ERROR: Ordering animals.");
+            //e.printStackTrace();
         } finally {
             closeStatement(stmt);
             disconnect();
@@ -122,17 +129,21 @@ public class MySQLConnector implements Connector2 {
     @Override
     public void insertAnimal(Animal animal) {
         String query;
-        Statement stmt = null;
+        PreparedStatement stmt = null;
 
         try {
-            stmt = connect().createStatement();
+            query = "INSERT INTO AnimalsList (type, price, description) VALUES (?, ?, ?);";
+            stmt = connect().prepareStatement(query);
 
-            query = "INSERT INTO AnimalsList (type, price, description) VALUES ('" + animal.getType() + "', '" + animal.getPrice() + "', '" + animal.getDescription() + "')";
-            stmt.execute(query);
+            stmt.setString(1, animal.getType());
+            stmt.setDouble(2, animal.getPrice());
+            stmt.setString(3, animal.getDescription());
+            stmt.execute();
 
         } catch(Exception e){
-            System.err.println("ERROR: Inserting animal.");
-            e.printStackTrace();
+            log.error("ERROR: Inserting animal.");
+            //System.err.println("ERROR: Inserting animal.");
+            //e.printStackTrace();
         } finally {
             closeStatement(stmt);
             disconnect();
@@ -162,8 +173,9 @@ public class MySQLConnector implements Connector2 {
 
             result.close();
         } catch(Exception e){
-            System.err.println("ERROR: Getting animals.");
-            e.printStackTrace();
+            log.error("ERROR: Getting animals.");
+            //System.err.println("ERROR: Getting animals.");
+            //e.printStackTrace();
         } finally {
             closeStatement(stmt);
             disconnect();
